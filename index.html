@@ -250,6 +250,27 @@
             color: var(--secondary);
         }
 
+        .story-paragraph {
+            font-style: italic;
+            background: var(--light);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .story-paragraph:before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-family: Georgia, serif;
+        }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -473,6 +494,33 @@
             justify-content: center;
             color: var(--primary);
             font-size: 1.2rem;
+        }
+
+        .contact-social {
+            margin-top: 20px;
+        }
+
+        .contact-social .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .contact-social .social-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .contact-social .social-icon:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
         }
 
         .contact-form {
@@ -742,10 +790,15 @@
                     <img src="abdou-removebg-preview (1).png" alt="Abderrahmen Khemir" class="profile-img">
                 </div>
                 <div class="about-text">
-                    <h3>Embedded Computing Engineering Student</h3>
-                    <p>I'm a third-year computer science engineering student at the National Engineering School of Sousse (ENISO) with experience in AI, web, and mobile development. Passionate about AI and eager to apply my skills in real-world projects.</p>
-                    <p>My technical expertise spans multiple programming languages and frameworks, with a focus on creating innovative solutions to complex problems.</p>
+                    <h3>From Curiosity to Code: My Journey</h3>
                     
+                    <div class="story-paragraph">
+                      I’m now seeking a Final Year Project (PFE) internship for January 2026, where I can apply my AI expertise, embrace new challenges, and keep growing as an engineer driven by curiosity and innovation.
+
+My curiosity about how machines can learn like humans soon grew into a passion for Artificial Intelligence. At ENISO, I explored this field through hands-on projects, from building computer vision models with TensorFlow Lite and YOLO to creating AI chatbots for data analysis.
+
+Internships at Capgemini and Tunisie Telecom strengthened my skills in Python, Java, and C, and taught me how to turn ideas into real-world solutions.
+                    </div>
                     <h4>Technical Skills</h4>
                     <div class="skills">
                         <span class="skill">Python</span>
@@ -954,9 +1007,9 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2023 - 2026</span>
-                        <h3>National Engineering School of Sousse</h3>
-                        <p>3rd year embedded computing engineering cycle</p>
+                        <span class="timeline-date">Jun - Jul 2023</span>
+                        <h3>Internship - Tunisie Telecom</h3>
+                        <p>Gained hands-on experience in telecom infrastructure and customer communication, enhancing technical and interpersonal skills in a dynamic telecommunications environment.</p>
                     </div>
                 </div>
                 
@@ -964,9 +1017,29 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2026</span>
+                        <h3>National Engineering School of Sousse</h3>
+                        <p>3rd year embedded computing engineering cycle</p>
+                    </div>
+                </div>
+                
+                <!-- Experience 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
                         <span class="timeline-date">2021 - 2023</span>
                         <h3>Nabeul Preparatory Institute</h3>
                         <p>Preparatory Engineering Exam - PT</p>
+                    </div>
+                </div>
+                
+                <!-- Experience 6 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2021</span>
+                        <h3>Korba High School</h3>
+                        <p>Tunisian Baccalaureate - Technology Section</p>
                     </div>
                 </div>
             </div>
@@ -1036,13 +1109,16 @@
                         </div>
                     </div>
                     
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/abderrahmen-khemir-a94a21257/" target="_blank" class="social-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/abdoukhemir" target="_blank" class="social-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
+                    <div class="contact-social">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/abderrahmen-khemir-a94a21257/" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/abdoukhemir" target="_blank" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
