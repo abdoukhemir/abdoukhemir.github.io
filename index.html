@@ -4,65 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abderrahmen Khemir — AI & Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Abderrahmen Khemir — AI &amp; Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- ========== NAVBAR ========== -->
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">AK<span>.</span></a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#volunteering">Activities</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="nav-cv-btn">CV</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <i class="fas fa-bars"></i>
-            </button>
+    <header class="site-header">
+        <nav class="container nav-inner">
+            <div class="nav-left">
+                <a href="#home" class="brand" aria-label="Abderrahmen Khemir home">
+                    <svg class="brand-mark" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <line x1="12" y1="2" x2="12" y2="6" stroke="#fb9826" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="12" y1="18" x2="12" y2="22" stroke="#fb9826" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="2" y1="12" x2="6" y2="12" stroke="#fb9826" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="18" y1="12" x2="22" y2="12" stroke="#fb9826" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="5" y1="5" x2="7.8" y2="7.8" stroke="#fb9826" stroke-width="1.8" stroke-linecap="round" opacity="0.65"/>
+                        <line x1="16.2" y1="16.2" x2="19" y2="19" stroke="#fb9826" stroke-width="1.8" stroke-linecap="round" opacity="0.65"/>
+                        <circle cx="12" cy="12" r="3.2" stroke="#f2f5f8" stroke-width="1.8"/>
+                    </svg>
+                    <span class="brand-text">abderrahmen</span>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="mobile-only-nav"><a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer">View CV</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://github.com/abdoukhemir" target="_blank" rel="noopener noreferrer" class="nav-text-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/abderrahmen-khemir-a94a21257/" target="_blank" rel="noopener noreferrer" class="nav-text-link">LinkedIn</a>
+                <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-primary pill-sm">View CV</a>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
     <!-- ========== HERO ========== -->
     <section class="hero" id="home">
-        <div class="container hero-inner">
-            <div class="hero-text">
-                <p class="hero-tag">👋 Hello, I'm</p>
-                <h1>Abderrahmen Khemir</h1>
-                <h2>AI & Automation Engineer</h2>
-                <p class="hero-desc">
-                    Computer engineer specialized in AI integration, intelligent agents, and full-stack software
-                    development. Driven by curiosity and dedicated to turning complex real-world challenges into
-                    scalable, high-impact solutions.
-                </p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
-                    <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-cv"><i class="fas fa-file-pdf"></i> View CV</a>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <div class="hero-eyebrow">
+                        <span class="status-dot" aria-hidden="true"></span>
+                        <span>AI &amp; Automation Engineer · Tunisia</span>
+                    </div>
+
+                    <h1>Abderrahmen<br>Khemir</h1>
+
+                    <p class="hero-lead">
+                        Computer engineer specialized in AI integration, intelligent agents, and full-stack software
+                        development. Driven by curiosity and dedicated to turning complex real-world challenges into
+                        scalable, high-impact solutions.
+                    </p>
+
+                    <div class="hero-cta-row">
+                        <a href="#projects" class="pill-btn pill-primary">View Projects</a>
+                        <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-ghost">
+                            <i class="far fa-file-lines" aria-hidden="true"></i> View CV
+                        </a>
+                    </div>
+
+                    <div class="hero-cli-block">
+                        <span class="hero-cli-label">Reach out directly</span>
+                        <div class="cli-pill">
+                            <span class="cli-prompt" aria-hidden="true">&gt;</span>
+                            <a href="mailto:abderahmen.khemir@gmail.com" class="cli-command">mailto abderahmen.khemir@gmail.com</a>
+                            <button type="button" class="cli-copy-btn" id="copyEmailBtn" aria-label="Copy email address" title="Copy email address">
+                                <i class="far fa-copy" id="copyEmailIcon"></i>
+                                <span class="cli-copy-feedback" id="copyEmailFeedback">Copied</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashed Technical Frame -->
+                <div class="hero-showcase">
+                    <div class="sketch-frame">
+                        <div class="sketch-window">
+                            <div class="sketch-topbar">
+                                <div class="sketch-dots" aria-hidden="true">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <span class="sketch-path">Abderrahmen Khemir</span>
+                            </div>
+
+                            <div class="sketch-body">
+                                <div class="portrait-card">
+                                    <img src="assets/profile.jpg" alt="Abderrahmen Khemir" class="hero-portrait">
+                                </div>
+                            </div>
+                        </div>
+
+                        <svg class="sketch-connector" viewBox="0 0 120 48" fill="none" aria-hidden="true">
+                            <path d="M4 40 C 32 40, 44 10, 76 10 L 112 10" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" stroke-dasharray="4 4" stroke-linecap="round"/>
+                            <circle cx="114" cy="10" r="3" fill="#fb9826"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
-            <div class="hero-img-wrapper">
-                <!-- REPLACE with your photo -->
-                <img src="assets/profile.jpg" alt="Abderrahmen Khemir" class="hero-img">
+
+            <!-- Monochrome Affiliations Strip -->
+            <div class="credentials-strip" aria-label="Experience and certifications">
+                <div class="strip-track">
+                    <span class="strip-item">Warzeez Solutions</span>
+                    <span class="strip-item">Capgemini</span>
+                    <span class="strip-item">Huawei Seeds</span>
+                    <span class="strip-item">Tunisie Telecom</span>
+                    <span class="strip-item">ENISo</span>
+                    <span class="strip-item">NVIDIA</span>
+                    <span class="strip-item">IBM</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== ABOUT ========== -->
-    <section id="about" class="section">
+    <!-- ========== ABOUT & SKILLS ========== -->
+    <section id="about" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-head">
+                <span class="section-index">01 // About</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
             <div class="about-grid">
-                <div class="about-text">
+                <div class="about-prose">
                     <p>
                         I'm a computer engineer with hands-on experience designing
                         <strong>AI agents</strong>, integrating <strong>Large Language Models</strong>,
@@ -80,27 +159,30 @@
                         for the Huawei Seeds for the Future bootcamp in China.
                     </p>
                 </div>
-                <div class="skills-box">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-category">
-                        <h4>AI & Automation</h4>
-                        <div class="tags">
+
+                <div class="skills-panel">
+                    <div class="skills-panel-head">
+                        <span class="mono-label">Technical Skills</span>
+                    </div>
+                    <div class="skill-group">
+                        <h3>AI &amp; Automation</h3>
+                        <div class="chip-list">
                             <span>LLMs</span><span>AI Agents</span><span>n8n</span>
                             <span>Whisper</span><span>NLP</span><span>YOLOv8</span>
                             <span>TensorFlow Lite</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h4>Programming</h4>
-                        <div class="tags">
+                    <div class="skill-group">
+                        <h3>Programming</h3>
+                        <div class="chip-list">
                             <span>Python</span><span>JavaScript</span><span>TypeScript</span>
                             <span>Java</span><span>Kotlin</span><span>Dart</span>
                             <span>C / C++</span><span>SQL</span>
                         </div>
                     </div>
-                    <div class="skill-category">
-                        <h4>Backend & Tools</h4>
-                        <div class="tags">
+                    <div class="skill-group">
+                        <h3>Backend &amp; Tools</h3>
+                        <div class="chip-list">
                             <span>FastAPI</span><span>Node.js</span><span>Spring Boot</span>
                             <span>Flutter</span><span>Angular</span><span>Docker</span>
                             <span>Git</span><span>Odoo</span>
@@ -111,56 +193,89 @@
         </div>
     </section>
 
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-head-row">
+                <div class="section-head">
+                    <span class="section-index">02 // Projects</span>
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-subtitle">Private products &amp; open-source repositories</p>
+                </div>
+
+                <div class="project-filters" role="group" aria-label="Filter projects">
+                    <button type="button" class="filter-pill active" data-filter="all">All</button>
+                    <button type="button" class="filter-pill" data-filter="private">Private</button>
+                    <button type="button" class="filter-pill" data-filter="public">Public</button>
+                </div>
+            </div>
+
+            <div id="projects-grid" class="projects-grid">
+                <p class="loading">Loading projects...</p>
+            </div>
+        </div>
+    </section>
+
     <!-- ========== EXPERIENCE ========== -->
     <section id="experience" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
+            <div class="section-head">
+                <span class="section-index">03 // Experience</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
                     <div class="timeline-card">
-                        <span class="timeline-date">Feb 2026 – May 2026</span>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Feb 2026 – May 2026</span>
+                        </div>
                         <h3>End of Studies Intern — Warzeez Solutions</h3>
                         <p>Built a local AI agent automating Odoo operations via natural language across Odoo Discuss,
                             AI Module, and Telegram. Developed custom Odoo modules, a FastAPI service, and n8n workflows
                             with a local LLM (Qwen 3-VL) and Whisper — keeping all data fully private.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
                     <div class="timeline-card">
-                        <span class="timeline-date">Oct 2025 — 10 days</span>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Oct 2025 — 10 days</span>
+                        </div>
                         <h3>Bootcamp Trainee — Huawei (China)</h3>
                         <p>Selected among top 10 Tunisian engineering students for Seeds for the Future. Trained in AI,
-                            Cloud, 5G, and IoT by Huawei engineers. Visited DJI, Tencent, and tech hubs in Shenzhen &
+                            Cloud, 5G, and IoT by Huawei engineers. Visited DJI, Tencent, and tech hubs in Shenzhen &amp;
                             Dongguan.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
                     <div class="timeline-card">
-                        <span class="timeline-date">Jun – Jul 2025</span>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Jun – Jul 2025</span>
+                        </div>
                         <h3>Intern — Capgemini Tunis</h3>
                         <p>Developed a secure data management platform with import/export for XML, CSV, JSON.
                             Implemented AES/RSA encryption and file signature verification. Built with Python,
                             SQLAlchemy, and MySQL.</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <article class="timeline-item">
+                    <div class="timeline-marker" aria-hidden="true"></div>
                     <div class="timeline-card">
-                        <span class="timeline-date">Jun – Jul 2024</span>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Jun – Jul 2024</span>
+                        </div>
                         <h3>Intern — Tunisie Telecom Nabeul</h3>
                         <p>Assisted telecom technicians with Wi-Fi, phone lines, and 4G infrastructure. Developed an
                             Angular-based internal dashboard for managing Tunisie Telecom services using the company's
                             official UI/UX theme.</p>
                     </div>
-                </div>
-
+                </article>
             </div>
         </div>
     </section>
@@ -168,36 +283,29 @@
     <!-- ========== EDUCATION ========== -->
     <section id="education" class="section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
+            <div class="section-head">
+                <span class="section-index">04 // Education</span>
+                <h2 class="section-title">Education</h2>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="timeline-date">2023 – 2026</span>
-                        <h3>National Engineering School of Sousse (ENISo)</h3>
-                        <p>Industrial Computer Engineering — Specialization: Distributed Systems</p>
-                    </div>
-                </div>
+            <div class="edu-grid">
+                <article class="surface-card">
+                    <span class="card-date">2023 – 2026</span>
+                    <h3>National Engineering School of Sousse (ENISo)</h3>
+                    <p>Industrial Computer Engineering — Specialization: Distributed Systems</p>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="timeline-date">2021 – 2023</span>
-                        <h3>Nabeul Preparatory Institute (IPEIN)</h3>
-                        <p>Preparatory Engineering Exam — PT</p>
-                    </div>
-                </div>
+                <article class="surface-card">
+                    <span class="card-date">2021 – 2023</span>
+                    <h3>Nabeul Preparatory Institute (IPEIN)</h3>
+                    <p>Preparatory Engineering Exam — PT</p>
+                </article>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card">
-                        <span class="timeline-date">2018 – 2021</span>
-                        <h3>Korba High School</h3>
-                        <p>Tunisian Baccalaureate — Technology Section</p>
-                    </div>
-                </div>
-
+                <article class="surface-card">
+                    <span class="card-date">2018 – 2021</span>
+                    <h3>Korba High School</h3>
+                    <p>Tunisian Baccalaureate — Technology Section</p>
+                </article>
             </div>
         </div>
     </section>
@@ -205,151 +313,177 @@
     <!-- ========== VOLUNTEERING ========== -->
     <section id="volunteering" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Volunteering & Activities</h2>
-            <div class="volunteer-grid">
+            <div class="section-head">
+                <span class="section-index">05 // Activities</span>
+                <h2 class="section-title">Volunteering &amp; Activities</h2>
+            </div>
 
-                <div class="volunteer-card">
-                    <div class="volunteer-icon"><i class="fas fa-users"></i></div>
-                    <span class="volunteer-year">2025</span>
+            <div class="volunteer-grid">
+                <article class="surface-card">
+                    <div class="card-top-row">
+                        <div class="icon-box"><i class="fas fa-users"></i></div>
+                        <span class="card-date">2025</span>
+                    </div>
                     <h3>EUREKA Club</h3>
                     <p>Vice President — Leading initiatives, coordinating events, and mentoring members within the
                         engineering student community.</p>
-                </div>
+                </article>
 
-                <div class="volunteer-card">
-                    <div class="volunteer-icon"><i class="fas fa-leaf"></i></div>
-                    <span class="volunteer-year">2024</span>
+                <article class="surface-card">
+                    <div class="card-top-row">
+                        <div class="icon-box"><i class="fas fa-leaf"></i></div>
+                        <span class="card-date">2024</span>
+                    </div>
                     <h3>Soli and Green</h3>
                     <p>Active Member — Contributed to sustainability and social solidarity projects across community
                         initiatives.</p>
-                </div>
+                </article>
 
-                <div class="volunteer-card">
-                    <div class="volunteer-icon"><i class="fas fa-guitar"></i></div>
-                    <span class="volunteer-year">2013 – 2019</span>
+                <article class="surface-card">
+                    <div class="card-top-row">
+                        <div class="icon-box"><i class="fas fa-guitar"></i></div>
+                        <span class="card-date">2013 – 2019</span>
+                    </div>
                     <h3>TRIART Conservatory</h3>
                     <p>Guitarist — Six years of musical training and performance, developing discipline, creativity, and
                         stage confidence.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== PROJECTS ========== -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Private products & open-source repositories</p>
-            <div id="projects-grid" class="projects-grid">
-                <p class="loading">Loading projects...</p>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- ========== CERTIFICATES ========== -->
-    <section id="certificates" class="section section-alt">
+    <section id="certificates" class="section">
         <div class="container">
-            <h2 class="section-title">Certificates</h2>
+            <div class="section-head">
+                <span class="section-index">06 // Certificates</span>
+                <h2 class="section-title">Certificates</h2>
+            </div>
+
             <div class="certs-grid">
-                <div class="cert-card" onclick="openModal('assets/certs/toeic.png')">
-                    <img src="assets/certs/toeic.png" alt="C1 TOEIC">
-                    <div class="cert-overlay"><span>C1 TOEIC — 2025</span></div>
-                </div>
-                <div class="cert-card" onclick="openModal('assets/certs/huawei.png')">
-                    <img src="assets/certs/huawei.png" alt="Huawei">
-                    <div class="cert-overlay"><span>Huawei Seeds for the Future — 2025</span></div>
-                </div>
-                <div class="cert-card" onclick="openModal('assets/certs/nvidia.png')">
-                    <img src="assets/certs/nvidia.png" alt="NVIDIA">
-                    <div class="cert-overlay"><span>NVIDIA Data Engineering — 2025</span></div>
-                </div>
-                <div class="cert-card" onclick="openModal('assets/certs/ibm.png')">
-                    <img src="assets/certs/ibm.png" alt="IBM">
-                    <div class="cert-overlay"><span>IBM Granite Code Gen — 2025</span></div>
-                </div>
+                <button type="button" class="cert-card" onclick="openModal('assets/certs/toeic.png')">
+                    <div class="cert-thumb">
+                        <img src="assets/certs/toeic.png" alt="C1 TOEIC">
+                    </div>
+                    <div class="cert-meta">
+                        <span>C1 TOEIC — 2025</span>
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                    </div>
+                </button>
+
+                <button type="button" class="cert-card" onclick="openModal('assets/certs/huawei.png')">
+                    <div class="cert-thumb">
+                        <img src="assets/certs/huawei.png" alt="Huawei">
+                    </div>
+                    <div class="cert-meta">
+                        <span>Huawei Seeds for the Future — 2025</span>
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                    </div>
+                </button>
+
+                <button type="button" class="cert-card" onclick="openModal('assets/certs/nvidia.png')">
+                    <div class="cert-thumb">
+                        <img src="assets/certs/nvidia.png" alt="NVIDIA">
+                    </div>
+                    <div class="cert-meta">
+                        <span>NVIDIA Data Engineering — 2025</span>
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                    </div>
+                </button>
+
+                <button type="button" class="cert-card" onclick="openModal('assets/certs/ibm.png')">
+                    <div class="cert-thumb">
+                        <img src="assets/certs/ibm.png" alt="IBM">
+                    </div>
+                    <div class="cert-meta">
+                        <span>IBM Granite Code Gen — 2025</span>
+                        <i class="fas fa-expand-alt" aria-hidden="true"></i>
+                    </div>
+                </button>
             </div>
         </div>
     </section>
 
     <!-- ========== LANGUAGES ========== -->
-    <section id="languages" class="section">
+    <section id="languages" class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Languages</h2>
-            <div class="languages-grid">
+            <div class="section-head">
+                <span class="section-index">07 // Languages</span>
+                <h2 class="section-title">Languages</h2>
+            </div>
 
+            <div class="languages-grid">
                 <div class="language-card">
-                    <span class="lang-flag">🇹🇳</span>
+                    <span class="lang-code">AR</span>
                     <h3>Arabic</h3>
                     <span class="lang-level lang-native">Native</span>
                 </div>
 
                 <div class="language-card">
-                    <span class="lang-flag">🇫🇷</span>
+                    <span class="lang-code">FR</span>
                     <h3>French</h3>
                     <span class="lang-level lang-fluent">Fluent</span>
                 </div>
 
                 <div class="language-card">
-                    <span class="lang-flag">🇬🇧</span>
+                    <span class="lang-code">EN</span>
                     <h3>English</h3>
                     <span class="lang-level lang-fluent">C1 — TOEIC 940</span>
                 </div>
 
                 <div class="language-card">
-                    <span class="lang-flag">🇮🇹</span>
+                    <span class="lang-code">IT</span>
                     <h3>Italian</h3>
                     <span class="lang-level lang-basic">Beginner</span>
                 </div>
 
                 <div class="language-card">
-                    <span class="lang-flag">🇪🇸</span>
+                    <span class="lang-code">ES</span>
                     <h3>Spanish</h3>
                     <span class="lang-level lang-basic">Beginner</span>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- ========== CONTACT ========== -->
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:abderahmen.khemir@gmail.com">abderahmen.khemir@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+216 25 611 015</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Tunisia</p>
-                        </div>
+            <div class="contact-panel">
+                <div class="contact-copy">
+                    <span class="section-index">08 // Contact</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="contact-actions">
+                        <a href="mailto:abderahmen.khemir@gmail.com" class="pill-btn pill-primary">Send Email</a>
+                        <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-ghost">
+                            <i class="far fa-file-lines" aria-hidden="true"></i> View CV
+                        </a>
                     </div>
                 </div>
-                <div class="contact-social">
-                    <h3>Find me online</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/abdoukhemir" target="_blank" class="social-btn">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/abderrahmen-khemir-a94a21257/" target="_blank"
-                            class="social-btn">
-                            <i class="fab fa-linkedin-in"></i> LinkedIn
-                        </a>
+
+                <div class="contact-details">
+                    <div class="contact-row">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:abderahmen.khemir@gmail.com" class="contact-value">abderahmen.khemir@gmail.com</a>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+216 25 611 015</span>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Tunisia</span>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-label">Find me online</span>
+                        <div class="social-links">
+                            <a href="https://github.com/abdoukhemir" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/abderrahmen-khemir-a94a21257/" target="_blank" rel="noopener noreferrer" class="social-pill">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -357,15 +491,16 @@
     </section>
 
     <!-- ========== FOOTER ========== -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Abderrahmen Khemir. Built with HTML, CSS & JS.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Abderrahmen Khemir. Built with HTML, CSS &amp; JS.</p>
+            <a href="#home" class="footer-top">Back to top &uarr;</a>
         </div>
     </footer>
 
     <!-- ========== CERTIFICATE MODAL ========== -->
     <div class="modal" id="certModal" onclick="closeModal(event)">
-        <span class="modal-close" onclick="document.getElementById('certModal').style.display='none'">&times;</span>
+        <button type="button" class="modal-close" aria-label="Close certificate preview" onclick="closeCertModal()">&times;</button>
         <img src="" alt="Certificate" id="modalImg">
     </div>
 
@@ -379,15 +514,16 @@
                     <div class="gallery-loading"><i class="fas fa-spinner fa-spin"></i> Loading screenshots...</div>
                 </div>
                 <div class="modal-text-container">
+                    <span class="modal-badge-slot" id="modalBadgeSlot"></span>
                     <h2 id="modalTitle"></h2>
                     <p id="projectModalDescription"></p>
                     <div class="modal-tech" id="projectModalTech"></div>
                     <div id="modalReportContainer"></div>
                     <div class="modal-actions">
-                        <a id="projectCodeLink" class="btn link-code" href="#" target="_blank" rel="noopener">
+                        <a id="projectCodeLink" class="pill-btn pill-ghost" href="#" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> Code
                         </a>
-                        <a id="projectDemoLink" class="btn link-demo" href="#" target="_blank" rel="noopener">
+                        <a id="projectDemoLink" class="pill-btn pill-primary" href="#" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
                     </div>
