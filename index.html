@@ -32,20 +32,26 @@
                 </a>
 
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#certificates">Certificates</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="mobile-only-nav"><a href="assets/Abderrahmen_Khemir_CV_EN.pdf" target="_blank" rel="noopener noreferrer">View CV</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#education" data-i18n="nav.education">Education</a></li>
+                    <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    <li class="mobile-only-nav">
+                        <a href="assets/Abderrahmen_Khemir_CV_EN.pdf" target="_blank" rel="noopener noreferrer" class="js-cv-link" data-i18n="cta.viewCv">View CV</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="nav-actions">
                 <a href="https://github.com/abdoukhemir" target="_blank" rel="noopener noreferrer" class="nav-text-link">GitHub</a>
                 <a href="https://www.linkedin.com/in/abderrahmen-khemir-a94a21257/" target="_blank" rel="noopener noreferrer" class="nav-text-link">LinkedIn</a>
-                <a href="assets/Abderrahmen_Khemir_CV_EN.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-primary pill-sm">View CV</a>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="fr">FR</button>
+                </div>
+                <a href="assets/Abderrahmen_Khemir_CV_EN.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-primary pill-sm js-cv-link" data-i18n="cta.viewCv">View CV</a>
                 <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -60,32 +66,32 @@
                 <div class="hero-copy">
                     <div class="hero-eyebrow">
                         <span class="status-dot" aria-hidden="true"></span>
-                        <span>AI &amp; Automation Engineer · Tunisia</span>
+                        <span data-i18n="hero.eyebrow">AI &amp; Automation Engineer · Tunisia</span>
                     </div>
 
                     <h1>Abderrahmen<br>Khemir</h1>
 
-                    <p class="hero-lead">
+                    <p class="hero-lead" data-i18n="hero.lead">
                         Computer engineer specialized in AI integration, intelligent agents, and full-stack software
                         development. Driven by curiosity and dedicated to turning complex real-world challenges into
                         scalable, high-impact solutions.
                     </p>
 
                     <div class="hero-cta-row">
-                        <a href="#projects" class="pill-btn pill-primary">View Projects</a>
-                        <a href="assets/Abderrahmen_Khemir_CV_EN.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-ghost">
-                            <i class="far fa-file-lines" aria-hidden="true"></i> View CV
+                        <a href="#projects" class="pill-btn pill-primary" data-i18n="cta.viewProjects">View Projects</a>
+                        <a href="assets/Abderrahmen_Khemir_CV_EN.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-ghost js-cv-link">
+                            <i class="far fa-file-lines" aria-hidden="true"></i> <span data-i18n="cta.viewCv">View CV</span>
                         </a>
                     </div>
 
                     <div class="hero-cli-block">
-                        <span class="hero-cli-label">Reach out directly</span>
+                        <span class="hero-cli-label" data-i18n="hero.cliLabel">Reach out directly</span>
                         <div class="cli-pill">
                             <span class="cli-prompt" aria-hidden="true">&gt;</span>
                             <a href="mailto:abderahmen.khemir@gmail.com" class="cli-command">mailto abderahmen.khemir@gmail.com</a>
                             <button type="button" class="cli-copy-btn" id="copyEmailBtn" aria-label="Copy email address" title="Copy email address">
                                 <i class="far fa-copy" id="copyEmailIcon"></i>
-                                <span class="cli-copy-feedback" id="copyEmailFeedback">Copied</span>
+                                <span class="cli-copy-feedback" id="copyEmailFeedback" data-i18n="hero.copied">Copied</span>
                             </button>
                         </div>
                     </div>
@@ -106,6 +112,17 @@
                                 <div class="portrait-card">
                                     <img src="assets/profile.jpg" alt="Abderrahmen Khemir" class="hero-portrait">
                                 </div>
+
+                                <div class="sketch-annotations">
+                                    <div class="sketch-node">
+                                        <span class="node-key" data-i18n="card.focusKey">focus</span>
+                                        <span class="node-val" data-i18n="card.focusVal">Local AI Agents &amp; Full-Stack</span>
+                                    </div>
+                                    <div class="sketch-node">
+                                        <span class="node-key" data-i18n="card.degreeKey">degree</span>
+                                        <span class="node-val" data-i18n="card.degreeVal">ENISo · Distributed Systems</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -116,19 +133,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Monochrome Affiliations Strip -->
-            <div class="credentials-strip" aria-label="Experience and certifications">
-                <div class="strip-track">
-                    <span class="strip-item">Warzeez Solutions</span>
-                    <span class="strip-item">Capgemini</span>
-                    <span class="strip-item">Huawei Seeds</span>
-                    <span class="strip-item">Tunisie Telecom</span>
-                    <span class="strip-item">ENISo</span>
-                    <span class="strip-item">NVIDIA</span>
-                    <span class="strip-item">IBM</span>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -136,25 +140,25 @@
     <section id="about" class="section section-alt">
         <div class="container">
             <div class="section-head">
-                <span class="section-index">01 // About</span>
-                <h2 class="section-title">About Me</h2>
+                <span class="section-index" data-i18n="about.index">01 // About</span>
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
             </div>
 
             <div class="about-grid">
                 <div class="about-prose">
-                    <p>
+                    <p data-i18n-html="about.p1">
                         I'm a computer engineer with hands-on experience designing
                         <strong>AI agents</strong>, integrating <strong>Large Language Models</strong>,
                         and building machine learning pipelines. I enjoy combining modern AI tools
                         with real-world business systems to automate complex tasks.
                     </p>
-                    <p>
+                    <p data-i18n-html="about.p2">
                         My journey took me from embedded computing at <strong>ENISo</strong> to
                         internships at <strong>Capgemini</strong>, <strong>Tunisie Telecom</strong>,
                         and <strong>Warzeez Solutions</strong>, where I built local AI agents,
                         secure data platforms, and telecom dashboards.
                     </p>
-                    <p>
+                    <p data-i18n-html="about.p3">
                         I was also selected among the <strong>top 10 Tunisian students</strong>
                         for the Huawei Seeds for the Future bootcamp in China.
                     </p>
@@ -162,10 +166,10 @@
 
                 <div class="skills-panel">
                     <div class="skills-panel-head">
-                        <span class="mono-label">Technical Skills</span>
+                        <span class="mono-label" data-i18n="skills.title">Technical Skills</span>
                     </div>
                     <div class="skill-group">
-                        <h3>AI &amp; Automation</h3>
+                        <h3 data-i18n="skills.ai">AI &amp; Automation</h3>
                         <div class="chip-list">
                             <span>LLMs</span><span>AI Agents</span><span>n8n</span>
                             <span>Whisper</span><span>NLP</span><span>YOLOv8</span>
@@ -173,7 +177,7 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <h3>Programming</h3>
+                        <h3 data-i18n="skills.prog">Programming</h3>
                         <div class="chip-list">
                             <span>Python</span><span>JavaScript</span><span>TypeScript</span>
                             <span>Java</span><span>Kotlin</span><span>Dart</span>
@@ -181,7 +185,7 @@
                         </div>
                     </div>
                     <div class="skill-group">
-                        <h3>Backend &amp; Tools</h3>
+                        <h3 data-i18n="skills.backend">Backend &amp; Tools</h3>
                         <div class="chip-list">
                             <span>FastAPI</span><span>Node.js</span><span>Spring Boot</span>
                             <span>Flutter</span><span>Angular</span><span>Docker</span>
@@ -198,20 +202,20 @@
         <div class="container">
             <div class="section-head-row">
                 <div class="section-head">
-                    <span class="section-index">02 // Projects</span>
-                    <h2 class="section-title">My Projects</h2>
-                    <p class="section-subtitle">Private products &amp; open-source repositories</p>
+                    <span class="section-index" data-i18n="projects.index">02 // Projects</span>
+                    <h2 class="section-title" data-i18n="projects.title">My Projects</h2>
+                    <p class="section-subtitle" data-i18n="projects.subtitle">Private products &amp; open-source repositories</p>
                 </div>
 
                 <div class="project-filters" role="group" aria-label="Filter projects">
-                    <button type="button" class="filter-pill active" data-filter="all">All</button>
-                    <button type="button" class="filter-pill" data-filter="private">Private</button>
-                    <button type="button" class="filter-pill" data-filter="public">Public</button>
+                    <button type="button" class="filter-pill active" data-filter="all" data-i18n="projects.filterAll">All</button>
+                    <button type="button" class="filter-pill" data-filter="private" data-i18n="projects.filterPrivate">Private</button>
+                    <button type="button" class="filter-pill" data-filter="public" data-i18n="projects.filterPublic">Public</button>
                 </div>
             </div>
 
             <div id="projects-grid" class="projects-grid">
-                <p class="loading">Loading projects...</p>
+                <p class="loading" data-i18n="projects.loading">Loading projects...</p>
             </div>
         </div>
     </section>
@@ -220,8 +224,8 @@
     <section id="experience" class="section section-alt">
         <div class="container">
             <div class="section-head">
-                <span class="section-index">03 // Experience</span>
-                <h2 class="section-title">Work Experience</h2>
+                <span class="section-index" data-i18n="exp.index">03 // Experience</span>
+                <h2 class="section-title" data-i18n="exp.title">Work Experience</h2>
             </div>
 
             <div class="timeline">
@@ -229,10 +233,10 @@
                     <div class="timeline-marker" aria-hidden="true"></div>
                     <div class="timeline-card">
                         <div class="timeline-meta">
-                            <span class="timeline-date">Feb 2026 – May 2026</span>
+                            <span class="timeline-date" data-i18n="exp.item1Date">Feb 2026 – May 2026</span>
                         </div>
-                        <h3>End of Studies Intern — Warzeez Solutions</h3>
-                        <p>Built a local AI agent automating Odoo operations via natural language across Odoo Discuss,
+                        <h3 data-i18n="exp.item1Title">End of Studies Intern — Warzeez Solutions</h3>
+                        <p data-i18n="exp.item1Desc">Built a local AI agent automating Odoo operations via natural language across Odoo Discuss,
                             AI Module, and Telegram. Developed custom Odoo modules, a FastAPI service, and n8n workflows
                             with a local LLM (Qwen 3-VL) and Whisper — keeping all data fully private.</p>
                     </div>
@@ -242,10 +246,10 @@
                     <div class="timeline-marker" aria-hidden="true"></div>
                     <div class="timeline-card">
                         <div class="timeline-meta">
-                            <span class="timeline-date">Oct 2025 — 10 days</span>
+                            <span class="timeline-date" data-i18n="exp.item2Date">Oct 2025 — 10 days</span>
                         </div>
-                        <h3>Bootcamp Trainee — Huawei (China)</h3>
-                        <p>Selected among top 10 Tunisian engineering students for Seeds for the Future. Trained in AI,
+                        <h3 data-i18n="exp.item2Title">Bootcamp Trainee — Huawei (China)</h3>
+                        <p data-i18n="exp.item2Desc">Selected among top 10 Tunisian engineering students for Seeds for the Future. Trained in AI,
                             Cloud, 5G, and IoT by Huawei engineers. Visited DJI, Tencent, and tech hubs in Shenzhen &amp;
                             Dongguan.</p>
                     </div>
@@ -255,10 +259,10 @@
                     <div class="timeline-marker" aria-hidden="true"></div>
                     <div class="timeline-card">
                         <div class="timeline-meta">
-                            <span class="timeline-date">Jun – Jul 2025</span>
+                            <span class="timeline-date" data-i18n="exp.item3Date">Jun – Jul 2025</span>
                         </div>
-                        <h3>Intern — Capgemini Tunis</h3>
-                        <p>Developed a secure data management platform with import/export for XML, CSV, JSON.
+                        <h3 data-i18n="exp.item3Title">Intern — Capgemini Tunis</h3>
+                        <p data-i18n="exp.item3Desc">Developed a secure data management platform with import/export for XML, CSV, JSON.
                             Implemented AES/RSA encryption and file signature verification. Built with Python,
                             SQLAlchemy, and MySQL.</p>
                     </div>
@@ -268,10 +272,10 @@
                     <div class="timeline-marker" aria-hidden="true"></div>
                     <div class="timeline-card">
                         <div class="timeline-meta">
-                            <span class="timeline-date">Jun – Jul 2024</span>
+                            <span class="timeline-date" data-i18n="exp.item4Date">Jun – Jul 2024</span>
                         </div>
-                        <h3>Intern — Tunisie Telecom Nabeul</h3>
-                        <p>Assisted telecom technicians with Wi-Fi, phone lines, and 4G infrastructure. Developed an
+                        <h3 data-i18n="exp.item4Title">Intern — Tunisie Telecom Nabeul</h3>
+                        <p data-i18n="exp.item4Desc">Assisted telecom technicians with Wi-Fi, phone lines, and 4G infrastructure. Developed an
                             Angular-based internal dashboard for managing Tunisie Telecom services using the company's
                             official UI/UX theme.</p>
                     </div>
@@ -284,27 +288,27 @@
     <section id="education" class="section">
         <div class="container">
             <div class="section-head">
-                <span class="section-index">04 // Education</span>
-                <h2 class="section-title">Education</h2>
+                <span class="section-index" data-i18n="edu.index">04 // Education</span>
+                <h2 class="section-title" data-i18n="edu.title">Education</h2>
             </div>
 
             <div class="edu-grid">
                 <article class="surface-card">
                     <span class="card-date">2023 – 2026</span>
-                    <h3>National Engineering School of Sousse (ENISo)</h3>
-                    <p>Industrial Computer Engineering — Specialization: Distributed Systems</p>
+                    <h3 data-i18n="edu.item1Title">National Engineering School of Sousse (ENISo)</h3>
+                    <p data-i18n="edu.item1Desc">Industrial Computer Engineering — Specialization: Distributed Systems</p>
                 </article>
 
                 <article class="surface-card">
                     <span class="card-date">2021 – 2023</span>
-                    <h3>Nabeul Preparatory Institute (IPEIN)</h3>
-                    <p>Preparatory Engineering Exam — PT</p>
+                    <h3 data-i18n="edu.item2Title">Nabeul Preparatory Institute (IPEIN)</h3>
+                    <p data-i18n="edu.item2Desc">Preparatory Engineering Exam — PT</p>
                 </article>
 
                 <article class="surface-card">
                     <span class="card-date">2018 – 2021</span>
-                    <h3>Korba High School</h3>
-                    <p>Tunisian Baccalaureate — Technology Section</p>
+                    <h3 data-i18n="edu.item3Title">Korba High School</h3>
+                    <p data-i18n="edu.item3Desc">Tunisian Baccalaureate — Technology Section</p>
                 </article>
             </div>
         </div>
@@ -314,8 +318,8 @@
     <section id="volunteering" class="section section-alt">
         <div class="container">
             <div class="section-head">
-                <span class="section-index">05 // Activities</span>
-                <h2 class="section-title">Volunteering &amp; Activities</h2>
+                <span class="section-index" data-i18n="vol.index">05 // Activities</span>
+                <h2 class="section-title" data-i18n="vol.title">Volunteering &amp; Activities</h2>
             </div>
 
             <div class="volunteer-grid">
@@ -324,8 +328,8 @@
                         <div class="icon-box"><i class="fas fa-users"></i></div>
                         <span class="card-date">2025</span>
                     </div>
-                    <h3>EUREKA Club</h3>
-                    <p>Vice President — Leading initiatives, coordinating events, and mentoring members within the
+                    <h3 data-i18n="vol.item1Title">EUREKA Club</h3>
+                    <p data-i18n="vol.item1Desc">Vice President — Leading initiatives, coordinating events, and mentoring members within the
                         engineering student community.</p>
                 </article>
 
@@ -334,8 +338,8 @@
                         <div class="icon-box"><i class="fas fa-leaf"></i></div>
                         <span class="card-date">2024</span>
                     </div>
-                    <h3>Soli and Green</h3>
-                    <p>Active Member — Contributed to sustainability and social solidarity projects across community
+                    <h3 data-i18n="vol.item2Title">Soli and Green</h3>
+                    <p data-i18n="vol.item2Desc">Active Member — Contributed to sustainability and social solidarity projects across community
                         initiatives.</p>
                 </article>
 
@@ -344,8 +348,8 @@
                         <div class="icon-box"><i class="fas fa-guitar"></i></div>
                         <span class="card-date">2013 – 2019</span>
                     </div>
-                    <h3>TRIART Conservatory</h3>
-                    <p>Guitarist — Six years of musical training and performance, developing discipline, creativity, and
+                    <h3 data-i18n="vol.item3Title">TRIART Conservatory</h3>
+                    <p data-i18n="vol.item3Desc">Guitarist — Six years of musical training and performance, developing discipline, creativity, and
                         stage confidence.</p>
                 </article>
             </div>
@@ -356,8 +360,8 @@
     <section id="certificates" class="section">
         <div class="container">
             <div class="section-head">
-                <span class="section-index">06 // Certificates</span>
-                <h2 class="section-title">Certificates</h2>
+                <span class="section-index" data-i18n="certs.index">06 // Certificates</span>
+                <h2 class="section-title" data-i18n="certs.title">Certificates</h2>
             </div>
 
             <div class="certs-grid">
@@ -408,39 +412,39 @@
     <section id="languages" class="section section-alt">
         <div class="container">
             <div class="section-head">
-                <span class="section-index">07 // Languages</span>
-                <h2 class="section-title">Languages</h2>
+                <span class="section-index" data-i18n="langs.index">07 // Languages</span>
+                <h2 class="section-title" data-i18n="langs.title">Languages</h2>
             </div>
 
             <div class="languages-grid">
                 <div class="language-card">
                     <span class="lang-code">AR</span>
-                    <h3>Arabic</h3>
-                    <span class="lang-level lang-native">Native</span>
+                    <h3 data-i18n="langs.arName">Arabic</h3>
+                    <span class="lang-level lang-native" data-i18n="langs.arLevel">Native</span>
                 </div>
 
                 <div class="language-card">
                     <span class="lang-code">FR</span>
-                    <h3>French</h3>
-                    <span class="lang-level lang-fluent">Fluent</span>
+                    <h3 data-i18n="langs.frName">French</h3>
+                    <span class="lang-level lang-fluent" data-i18n="langs.frLevel">Fluent</span>
                 </div>
 
                 <div class="language-card">
                     <span class="lang-code">EN</span>
-                    <h3>English</h3>
+                    <h3 data-i18n="langs.enName">English</h3>
                     <span class="lang-level lang-fluent">C1 — TOEIC 940</span>
                 </div>
 
                 <div class="language-card">
                     <span class="lang-code">IT</span>
-                    <h3>Italian</h3>
-                    <span class="lang-level lang-basic">Beginner</span>
+                    <h3 data-i18n="langs.itName">Italian</h3>
+                    <span class="lang-level lang-basic" data-i18n="langs.basicLevel">Beginner</span>
                 </div>
 
                 <div class="language-card">
                     <span class="lang-code">ES</span>
-                    <h3>Spanish</h3>
-                    <span class="lang-level lang-basic">Beginner</span>
+                    <h3 data-i18n="langs.esName">Spanish</h3>
+                    <span class="lang-level lang-basic" data-i18n="langs.basicLevel">Beginner</span>
                 </div>
             </div>
         </div>
@@ -451,31 +455,31 @@
         <div class="container">
             <div class="contact-panel">
                 <div class="contact-copy">
-                    <span class="section-index">08 // Contact</span>
-                    <h2 class="section-title">Get In Touch</h2>
+                    <span class="section-index" data-i18n="contact.index">08 // Contact</span>
+                    <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
                     <div class="contact-actions">
-                        <a href="mailto:abderahmen.khemir@gmail.com" class="pill-btn pill-primary">Send Email</a>
-                        <a href="assets/Abderrahmen_Khemir_CV_EN.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-ghost">
-                            <i class="far fa-file-lines" aria-hidden="true"></i> View CV
+                        <a href="mailto:abderahmen.khemir@gmail.com" class="pill-btn pill-primary" data-i18n="contact.sendEmail">Send Email</a>
+                        <a href="assets/Abderrahmen_Khemir_CV_EN.pdf" target="_blank" rel="noopener noreferrer" class="pill-btn pill-ghost js-cv-link">
+                            <i class="far fa-file-lines" aria-hidden="true"></i> <span data-i18n="cta.viewCv">View CV</span>
                         </a>
                     </div>
                 </div>
 
                 <div class="contact-details">
                     <div class="contact-row">
-                        <span class="contact-label">Email</span>
+                        <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
                         <a href="mailto:abderahmen.khemir@gmail.com" class="contact-value">abderahmen.khemir@gmail.com</a>
                     </div>
                     <div class="contact-row">
-                        <span class="contact-label">Phone</span>
+                        <span class="contact-label" data-i18n="contact.phoneLabel">Phone</span>
                         <span class="contact-value">+216 25 611 015</span>
                     </div>
                     <div class="contact-row">
-                        <span class="contact-label">Location</span>
-                        <span class="contact-value">Tunisia</span>
+                        <span class="contact-label" data-i18n="contact.locLabel">Location</span>
+                        <span class="contact-value" data-i18n="contact.locValue">Tunisia</span>
                     </div>
                     <div class="contact-row">
-                        <span class="contact-label">Find me online</span>
+                        <span class="contact-label" data-i18n="contact.onlineLabel">Find me online</span>
                         <div class="social-links">
                             <a href="https://github.com/abdoukhemir" target="_blank" rel="noopener noreferrer" class="social-pill">
                                 <i class="fab fa-github"></i> GitHub
@@ -493,8 +497,8 @@
     <!-- ========== FOOTER ========== -->
     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>&copy; 2026 Abderrahmen Khemir. Built with HTML, CSS &amp; JS.</p>
-            <a href="#home" class="footer-top">Back to top &uarr;</a>
+            <p data-i18n-html="footer.copy">&copy; 2026 Abderrahmen Khemir. Built with HTML, CSS &amp; JS.</p>
+            <a href="#home" class="footer-top" data-i18n="footer.top">Back to top &uarr;</a>
         </div>
     </footer>
 
@@ -521,10 +525,10 @@
                     <div id="modalReportContainer"></div>
                     <div class="modal-actions">
                         <a id="projectCodeLink" class="pill-btn pill-ghost" href="#" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> Code
+                            <i class="fab fa-github"></i> <span data-i18n="modal.code">Code</span>
                         </a>
                         <a id="projectDemoLink" class="pill-btn pill-primary" href="#" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-external-link-alt"></i> Live Demo
+                            <i class="fas fa-external-link-alt"></i> <span data-i18n="modal.liveDemo">Live Demo</span>
                         </a>
                     </div>
                 </div>
